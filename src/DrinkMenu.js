@@ -16,7 +16,7 @@ function DrinkMenu({ drinks }) {
       <Card>
         <CardBody>
           <CardTitle className="font-weight-bold text-center">
-            Food Menu
+            Drink Menu
           </CardTitle>
           <CardText>
             Some quick example text to build on the card title and make up the

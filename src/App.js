@@ -9,6 +9,8 @@ import FoodMenu from "./FoodMenu";
 import DrinkMenu from "./DrinkMenu";
 import Snack from "./FoodItem";
 import Drink from "./DrinkItem";
+import AddSnackForm from "./AddSnackForm";
+import AddDrinkForm from "./AddDrinkForm";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +29,7 @@ function App() {
   useEffect(() => {
     async function getDrinks() {
       let drinks = await SnackOrBoozeApi.getDrinks();
-      setSnacks(drinks);
+      setDrinks(drinks);
       setIsLoading(false);
     }
     getDrinks();
@@ -46,11 +48,17 @@ function App() {
             <Route exact path="/">
               <Home snacks={snacks} drinks={drinks} />
             </Route>
+            <Route exact path="/snacksForm">
+              <AddSnackForm />
+            </Route>
             <Route exact path="/snacks">
               <FoodMenu snacks={snacks} title="Snacks" />
             </Route>
             <Route path="/snacks/:id">
               <Snack items={snacks} cantFind="/snacks" />
+            </Route>
+            <Route exact path="/drinksForm">
+              <AddDrinkForm />
             </Route>
             <Route exact path="/drinks">
               <DrinkMenu drinks={drinks} title="Drinks" />

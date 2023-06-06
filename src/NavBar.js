@@ -10,7 +10,14 @@ function NavBar() {
         <NavLink exact to="/" className="navbar-brand">
           Snack or Booze
         </NavLink>
-
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink to="/snacksForm">Add a Snack</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/drinksForm">Add a Drink</NavLink>
+          </NavItem>  
+        </Nav>
         <Nav className="ml-auto" navbar>
           <NavItem>
             <NavLink to="/snacks">Snacks</NavLink>

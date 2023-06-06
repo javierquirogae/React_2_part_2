@@ -27,6 +27,13 @@
       "description": "Crisp!",
       "recipe": "Open can.",
       "serve": "Immediately."
+    },
+    {
+      "id": "coke zero",
+      "name": "coke zero",
+      "description": "An ice-cold, refreshing classic.",
+      "recipe": "got to local QT.",
+      "serve": "Serve very cold, straight up."
     }
   ],
   "snacks": [
@@ -50,6 +57,13 @@
       "description": "Tart and delicious.",
       "recipe": "Mix arugula, toasted walnuts, and thinly-sliced Parmesan cheese. Dress with lemon and olive oil.",
       "serve": "Place on tiny, precious little plates."
+    },
+    {
+      "id": "chips",
+      "name": "chips",
+      "description": "crunchy",
+      "recipe": "got to kroger",
+      "serve": "open bag"
     }
   ]
 }
